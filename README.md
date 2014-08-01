@@ -18,24 +18,22 @@ Usage:
 ## Quick Examples
 
 ```javascript
-    var json = {
-        tabs: [
-            {
-                'id'   : 'idTab1',
-                'url'  : '/url/tab/1',
-                'title': 'Title Tab 1'
-            },
-            {
-                'id'   : 'idTab2',
-                'url'  : '/url/tab/2',
-                'title': 'Title Tab 2'
-            }
-        ]
-    };
+var json = {
+    tabs: [
+        {
+            'id'   : 'idTab1',
+            'url'  : '/url/tab/1',
+            'title': 'Title Tab 1'
+        },
+        {
+            'id'   : 'idTab2',
+            'url'  : '/url/tab/2',
+            'title': 'Title Tab 2'
+        }
+    ]
+};
 
-    $('selector').dajaxTaB(
-        json
-    );
-
-});
+$('selector').dajaxTaB(
+    json
+);
 ```
