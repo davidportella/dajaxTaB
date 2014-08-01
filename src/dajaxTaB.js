@@ -5,7 +5,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 ;
-(function ($, window, undefined) {
+(function ($, _, window, undefined) {
 
     /**
      * Este metodo se ejecuta despues de agregar la funcionalidad
@@ -31,12 +31,12 @@
      */
     DajaxTaB.prototype = {
 
-        init         : function (options) {
+        init: function (options) {
 
             var that = this;
             that.$elem.after('<div class="tab-content"></div>');
 
-            _.each(options.links, function (j) {
+            _.each(options.tabs, function (j) {
 
                 that.$elem.append(
                     '<li>' +
@@ -68,12 +68,12 @@
                     $container = $('#' + id).children('.content-tab')
                     ;
 
-                if($container.is(':empty')){
+                if ($container.is(':empty')) {
                     $.post(url)
                         .done(function (data) {
                             $container.html(data);
 
-                            $container.attr('data-load','1');
+                            $container.attr('data-load', '1');
                         });
                 }
 
@@ -114,4 +114,4 @@
         return this;
     };
 
-})(jQuery, window);
+})(jQuery, _, window);
