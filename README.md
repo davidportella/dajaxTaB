@@ -17,6 +17,10 @@ Usage:
 
 ## Quick Examples
 
+```html
+<ul class="nav nav-tabs" id="dataTaB"></ul>
+```
+
 ```javascript
 var json = {
     tabs: [
@@ -33,7 +37,7 @@ var json = {
     ]
 };
 
-$('selector').dajaxTaB(
+$('#dataTaB').dajaxTaB(
     json
 );
 ```
